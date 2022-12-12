@@ -1,8 +1,9 @@
+import Slder from "../../../components/client/Home/Slider";
 
 function Home() {
   return (
     <>
-      Home
+      <Slder />
     </>
   );
 }
