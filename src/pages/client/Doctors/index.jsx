@@ -1,5 +1,11 @@
+import DocSlider from "../../../components/client/DoctorComponents/Slider";
+
 function Docs() {
-  return <>Docs</>;
+  return (
+    <>
+      <DocSlider />
+    </>
+  );
 }
 
 export default Docs;
