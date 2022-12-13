@@ -1,8 +1,15 @@
 import Slider from "react-slick";
 import { SliderItem, GalWrapper } from "./styled-index";
 import "./slider.css";
+import { useRef } from "react";
+import { useNavigate } from "react-router-dom";
 
 function DocSlider() {
+  const id = useRef();
+  const navigate = useNavigate()
+  const HendelClick = () => {
+    navigate("/more")
+  };
   const settings = {
     dots: true,
     infinite: true,
@@ -11,9 +18,9 @@ function DocSlider() {
     slidesToScroll: 1,
   };
   return (
-    <GalWrapper>
-      <Slider {...settings}>
-        <SliderItem id="1   ">
+    <GalWrapper data-aos="zoom-out" >
+      <Slider {...settings} >
+        <SliderItem id="1" ref={id} onClick={HendelClick}>
           <div>
             <img
               src="https://img.freepik.com/free-photo/beautiful-young-female-doctor-looking-camera-office_1301-7807.jpg?w=2000"
@@ -26,7 +33,7 @@ function DocSlider() {
             molestiae.
           </p>
         </SliderItem>
-        <SliderItem id="2   ">
+        <SliderItem id="2" onClick={HendelClick}>
           <div>
             <img
               src="https://img.freepik.com/free-photo/beautiful-young-female-doctor-looking-camera-office_1301-7807.jpg?w=2000"
@@ -39,7 +46,7 @@ function DocSlider() {
             molestiae.
           </p>
         </SliderItem>
-        <SliderItem id="3   ">
+        <SliderItem id="3" onClick={HendelClick}>
           <div>
             <img
               src="https://img.freepik.com/free-photo/beautiful-young-female-doctor-looking-camera-office_1301-7807.jpg?w=2000"
@@ -52,7 +59,7 @@ function DocSlider() {
             molestiae.
           </p>
         </SliderItem>
-        <SliderItem id="4">
+        <SliderItem id="4" onClick={HendelClick}>
           <div>
             <img
               src="https://img.freepik.com/free-photo/beautiful-young-female-doctor-looking-camera-office_1301-7807.jpg?w=2000"
@@ -65,7 +72,7 @@ function DocSlider() {
             molestiae.
           </p>
         </SliderItem>
-        <SliderItem id="5">
+        <SliderItem id="5" onClick={HendelClick}> 
           <div>
             <img
               src="https://img.freepik.com/free-photo/beautiful-young-female-doctor-looking-camera-office_1301-7807.jpg?w=2000"
@@ -78,7 +85,7 @@ function DocSlider() {
             molestiae.
           </p>
         </SliderItem>
-        <SliderItem id="6   ">
+        <SliderItem id="6" onClick={HendelClick}>
           <div>
             <img
               src="https://img.freepik.com/free-photo/beautiful-young-female-doctor-looking-camera-office_1301-7807.jpg?w=2000"

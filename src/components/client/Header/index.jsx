@@ -75,12 +75,13 @@ function Header() {
                     className="buttonRu"
                     value="ru"
                     onClick={HendelChange}
+                    data-aos="zoom-out"
                   >
                     RU
                   </button>
                 </>
               ) : (
-                <button className="buttonUz" value="uz" onClick={HendelChange2}>
+                <button data-aos="zoom-out" className="buttonUz" value="uz" onClick={HendelChange2}>
                   UZ
                 </button>
               )}

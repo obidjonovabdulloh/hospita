@@ -3,7 +3,7 @@ import "./styles.css";
 import { motion } from "framer-motion";
 import { Wrapper } from "./styled-index";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Buttons() {
   const [isHover, toggleHover] = React.useState(false);
@@ -39,6 +39,7 @@ export default function Buttons() {
       },
     },
   };
+  const navigate = useNavigate()
   const {t , i18n} = useTranslation()
   return (
     <Wrapper>
@@ -58,10 +59,11 @@ export default function Buttons() {
                 initial="exit"
                 animate={isHover ? "enter" : "exit"}
                 variants={subMenuAnimate}
+                onClick={() => navigate("/specialists")}
               >
                 <div className="sub-menu-background" />
                 <div className="sub-menu-container">
-                  <div className="sub-menu-item">Submenu Item 1</div>
+                  <div className="sub-menu-item">Mutaxasislar</div>
                 </div>
               </motion.div>
             </motion.div>
@@ -78,7 +80,7 @@ export default function Buttons() {
               onHoverEnd={toggleHoverMenu1}
             >
               <a href="#">
-              {t("Header.5")}  <i className="bx bxs-chevron-down"></i>
+              {t("Header.5")}<i className="bx bxs-chevron-down"></i>
               </a>
               <motion.div
                 className="sub-menu"
@@ -95,7 +97,7 @@ export default function Buttons() {
           </div>
         </li>
         <li>
-          <a href="#">    {t("Header.6")} </a>
+          <a href="#">{t("Header.6")} </a>
         </li>
         <li>
           <div className="flex-item">
