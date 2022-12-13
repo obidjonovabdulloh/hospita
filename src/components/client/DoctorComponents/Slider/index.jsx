@@ -18,7 +18,7 @@ function DocSlider() {
     slidesToScroll: 1,
   };
   return (
-    <GalWrapper data-aos="zoom-out" >
+    <GalWrapper>
       <Slider {...settings} >
         <SliderItem id="1" ref={id} onClick={HendelClick}>
           <div>

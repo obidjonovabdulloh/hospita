@@ -18,6 +18,7 @@ export const DocWrapper = styled.div`
         background-color: white;
         color: red;
         transform: scale(1.1);
+        box-shadow: 0px 0px 15px 0px red;
     }
   }
 `;
