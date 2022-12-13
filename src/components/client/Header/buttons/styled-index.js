@@ -15,6 +15,9 @@ export const Wrapper = styled.div`
       border-top: 1px solid black;
       li {
         margin-top: 10%;
+        .sub-menu-item {
+          cursor: pointer !important;
+        }
       }
     }
     li {
@@ -31,15 +34,20 @@ export const Wrapper = styled.div`
           color: #34e065;
         }
         @media screen and (max-width: 1265px) {
-            font-size: 15px;
+          font-size: 15px;
         }
         @media screen and (max-width: 1180px) {
-            font-size: 13px;
+          font-size: 13px;
         }
         @media screen and (max-width: 1015px) {
-            font-size: 10px;
+          font-size: 10px;
         }
       }
     }
   }
 `;
+
+
+export const Buttonw = styled.button`
+
+`
