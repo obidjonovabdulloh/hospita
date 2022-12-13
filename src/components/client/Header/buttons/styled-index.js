@@ -15,7 +15,6 @@ export const Wrapper = styled.div`
       border-top: 1px solid black;
       li {
         margin-top: 10%;
-
         .sub-menu-item {
           cursor: pointer !important;
         }
@@ -47,3 +46,8 @@ export const Wrapper = styled.div`
     }
   }
 `;
+
+
+export const Buttonw = styled.button`
+
+`
