@@ -6,6 +6,7 @@ import Specialist from "../../pages/client/Specialist";
 import Diognostika from "../../pages/client/Diog";
 import Aksiya from "../../pages/client/Aksiya";
 import Manzil from "../../pages/client/Manzil";
+import ClinicaInfo from "../../pages/client/Klinika Haqida";
 
 export const DataRouters = [
   {
@@ -48,4 +49,10 @@ export const DataRouters = [
     path: "/manzil",
     Element: <Manzil/>,
   },
+  {
+    id: 9,
+    path: "/InfoClicin",
+    Element: <ClinicaInfo/>,
+  },
+
 ];

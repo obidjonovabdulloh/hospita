@@ -76,7 +76,7 @@ function Header() {
             <li>
               
               <div>
-      <Button onClick={handleOpen}><a href="#">
+                <Button onClick={handleOpen}><a href="#">
                 <p>
                   <Lottie animationData={writing} />
                 </p>
