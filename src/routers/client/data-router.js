@@ -19,6 +19,7 @@ import Fizot11 from "../../pages/client/Fizo11";
 import Fizot12 from "../../pages/client/Fizo12";
 import Fizot13 from "../../pages/client/Fizo13";
 import Fizot14 from "../../pages/client/Fizo14";
+import Hamkor from "../../pages/client/hamkorlik";
 
 
 
@@ -134,4 +135,9 @@ export const DataRouters = [
     path: "/fizo14",
     Element: <Fizot14/>,
   },
+  {
+    id : 17,
+    path : "/hamkor",
+    Element :  <Hamkor/>
+  }
 ];
