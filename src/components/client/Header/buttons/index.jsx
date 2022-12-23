@@ -138,7 +138,7 @@ export default function Buttons() {
           </div>
         </li>
         <li>
-          <a href="#">{t("Header.6")} </a>
+          <a href="#"><Link to="/news">{t("Header.6")} </Link></a>
         </li>
         <li>
           <div className="flex-item">
