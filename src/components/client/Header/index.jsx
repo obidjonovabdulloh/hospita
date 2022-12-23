@@ -11,8 +11,29 @@ import MenuModal from "./menu";
 import { useState } from "react";
 import { Button } from "@material-ui/core";
 import { Link } from "react-router-dom";
+import * as React from 'react';
+import Box from '@mui/material/Box';
+import { NavLink } from "react-router-dom";
+import Modal from '@mui/material/Modal';
+import "./index.css"
+const style = {
+  position: 'absolute' ,
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: 400,
+  bgcolor: 'background.paper',
+  boxShadow: 24,
+  p: 4,
+  bradius: '20px',
+};
+
 
 function Header() {
+  const [openm, setOpenM] = React.useState(false);
+  const handleOpen = () => setOpenM(true);
+  const handleClose = () => setOpenM(false);
+
   const { t, i18n } = useTranslation();
   const [open, setOpen] = useState(false);
   const [opens, setOpens] = useState(false);
@@ -38,28 +59,48 @@ function Header() {
         <Nav>
           <ul>
             <li>
-              <a href="#">
+              <NavLink to={"/aksiya"}>
                 <p>
                   <Lottie animationData={percentage} />
                 </p>
                 {t("Header.0")}
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="#">
+              <NavLink to={"/manzil"}>
                 <p>
                   <Lottie animationData={address} />
                 </p>
                 {t("Header.1")}
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="#">
+              
+              <div>
+                <Button onClick={handleOpen}><a href="#">
                 <p>
                   <Lottie animationData={writing} />
                 </p>
                 {t("Header.2")}
-              </a>
+              </a></Button>
+                    <Modal
+                      open={openm}
+                      onClose={handleClose}
+                      aria-labelledby="modal-modal-title"
+                      aria-describedby="modal-modal-description"
+                    >
+                      <Box sx={style}>
+                      <div className="divc">
+                      <h2>Qabulga yozilish</h2>
+                      <input required placeholder="F.I.SH" type="text" />
+                      <input required type="number" placeholder="Telefon raqam" />
+                      <button>Submit</button>
+                      
+                      </div>
+
+                      </Box>
+                    </Modal>
+                </div>
             </li>
             <li>
               <a href="tel:+998972770303 ">
