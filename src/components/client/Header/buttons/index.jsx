@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Wrapper } from "./styled-index";
 import { useTranslation } from "react-i18next";
 import { Link, useNavigate } from "react-router-dom";
-
+import {NavLink} from "react-router-dom"
 export default function Buttons() {
   const [isHover, toggleHover] = React.useState(false);
   const toggleHoverMenu = () => {
@@ -126,9 +126,9 @@ export default function Buttons() {
               onHoverStart={toggleHoverMenu2}
               onHoverEnd={toggleHoverMenu2}
             >
-              <a href="#">
+             <NavLink to={"/news"}> <a href="#">
                 {t("Header.7")} <i className="bx bxs-chevron-down"></i>
-              </a>
+              </a></NavLink>
               <motion.div
                 className="sub-menu"
                 initial="exit"
