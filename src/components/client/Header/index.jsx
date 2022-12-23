@@ -15,6 +15,7 @@ import { Link } from "react-router-dom";
 function Header() {
   const { t, i18n } = useTranslation();
   const [open, setOpen] = useState(false);
+  const [opens, setOpens] = useState(false);
   const HendelChange = (e) => {
     let LangVal = e.target.value;
     window.location.reload();
@@ -81,7 +82,12 @@ function Header() {
                   </button>
                 </>
               ) : (
-                <button data-aos="zoom-out" className="buttonUz" value="uz" onClick={HendelChange2}>
+                <button
+                  data-aos="zoom-out"
+                  className="buttonUz"
+                  value="uz"
+                  onClick={HendelChange2}
+                >
                   UZ
                 </button>
               )}
