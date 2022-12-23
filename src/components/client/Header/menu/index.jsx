@@ -13,7 +13,11 @@ import Typography from "@mui/material/Typography";
 import call from "../../../../assets/client/call.json";
 import { Link } from "react-router-dom";
 
-function MenuModal({ open, setOpen }) {
+
+
+
+
+function MenuModal({setOpen, open }) {
   const { t, i18n } = useTranslation();
   const Close = () => setOpen(false)
   return (
@@ -43,13 +47,13 @@ function MenuModal({ open, setOpen }) {
                   </a>
                 </li>
                 <li>
+                  
                   <a href="#">
-                    <p>
+                  <p>
                       <Lottie animationData={writing} />
                     </p>
-                    {t("Header.2")}
-                  </a>
-                </li>
+                    {t("Header.2")}</a>                                  
+                  </li>
                 <li>
                   <a href="tel:+998972770303 ">
                     <p>
