@@ -116,17 +116,17 @@ export default function Buttons() {
                     <p>lorem</p>
                     </div>
                     <div className="sub-menu-item">
-                    <button className="btn2" onClick={() => navigate("/InfoClicin")}>
+                    <button className="btn2" onClick={() => navigate("/Afzallik")}>
                      Afzalliklari
                     </button> 
                     </div>
                     <div className="sub-menu-item">
-                    <button className="btn3" onClick={() => navigate("/InfoClicin")}>
+                    <button className="btn3" onClick={() => navigate("/Qulaylik")}>
                      Qulayliklar
                     </button> 
                     </div>
                     <div className="sub-menu-item">
-                    <button className="btn3" onClick={() => navigate("/InfoClicin")}>
+                    <button className="btn4" onClick={() => navigate("/Sertifikat")}>
                      Sertifikat
                     </button> 
                     </div>

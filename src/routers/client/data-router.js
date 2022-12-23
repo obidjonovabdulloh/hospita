@@ -7,6 +7,9 @@ import Diognostika from "../../pages/client/Diog";
 import Aksiya from "../../pages/client/Aksiya";
 import Manzil from "../../pages/client/Manzil";
 import ClinicaInfo from "../../pages/client/Klinika Haqida";
+import Afzallik from "../../pages/client/Afzalliklari";
+import Qulaylik from "../../pages/client/Qulaylik";
+import Sertifikat from "../../pages/client/Sertifikat";
 
 export const DataRouters = [
   {
@@ -53,6 +56,21 @@ export const DataRouters = [
     id: 9,
     path: "/InfoClicin",
     Element: <ClinicaInfo/>,
+  },
+  {
+    id: 10,
+    path: "/Afzallik",
+    Element: <Afzallik/>,
+  },
+  {
+    id: 11,
+    path: "/Qulaylik",
+    Element: <Qulaylik/>,
+  },
+  {
+    id: 12,
+    path: "/Sertifikat",
+    Element: <Sertifikat/>,
   },
 
 ];
