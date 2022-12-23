@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { createGlobalStyle } from "styled-components";
 
 export const WrapperContainer = styled.div`
-  max-width: 1340px;
+  max-width: 1300px;
   width: 100%;
   margin: 0 auto ;
   padding: 0 10px;

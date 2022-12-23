@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Wrapper } from "./styled-index";
 import { useTranslation } from "react-i18next";
 import { Link, useNavigate } from "react-router-dom";
-
+import { NavLink } from "react-router-dom";
 export default function Buttons() {
   const [isHover, toggleHover] = React.useState(false);
   const toggleHoverMenu = () => {
@@ -110,7 +110,9 @@ export default function Buttons() {
               >
                 <div className="sub-menu-background" />
                 <div className="sub-menu-container">
-                  <div className="sub-menu-item">Submenu Item 1</div>
+                  <div className="sub-menu-item"><button className="btn2" onClick={() => navigate("/InfoClicin")}>
+                      clinica info
+                    </button> </div>
                 </div>
               </motion.div>
             </motion.div>
