@@ -4,8 +4,8 @@ import { createGlobalStyle } from "styled-components";
 export const WrapperContainer = styled.div`
   max-width: 1300px;
   width: 100%;
-  margin: 0 auto ;
-  padding: 0 10px;
+  margin: 0 auto;
+  /* padding: 0 10px; */
 `;
 
 export const GlobalStyle = createGlobalStyle`

@@ -14,7 +14,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Infors = styled.div`
-  width: 65%;
+  width: 75%;
   margin: 0 !important;
   @media screen and (max-width: 900px) {
   width: 75%;
