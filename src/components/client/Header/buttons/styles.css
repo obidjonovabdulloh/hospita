@@ -44,7 +44,12 @@
   font-weight: 600;
   letter-spacing: 1px;  
 }
-
+.sub-menu-item .btn3{
+  border: none;
+  background-color: transparent;
+  font-weight: 600;
+  letter-spacing: 1px; 
+}
 .sub-menu-item p {
 color: transparent;
 }

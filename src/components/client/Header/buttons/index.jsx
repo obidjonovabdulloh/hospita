@@ -65,8 +65,7 @@ export default function Buttons() {
                   <div className="sub-menu-item">
                     <button
                       className="btn1"
-                      onClick={() => navigate("/specialists")}
-                    >
+                      onClick={() => navigate("/specialists")}>
                       Mutaxasislar
                     </button>
                   </div>
@@ -110,9 +109,27 @@ export default function Buttons() {
               >
                 <div className="sub-menu-background" />
                 <div className="sub-menu-container">
-                  <div className="sub-menu-item"><button className="btn2" onClick={() => navigate("/InfoClicin")}>
-                      clinica info
-                    </button> </div>
+                  <div className="sub-menu-item">
+                    <button className="btn1" onClick={() => navigate("/InfoClicin")}>
+                      Clinica info
+                    </button> 
+                    <p>lorem</p>
+                    </div>
+                    <div className="sub-menu-item">
+                    <button className="btn2" onClick={() => navigate("/InfoClicin")}>
+                     Afzalliklari
+                    </button> 
+                    </div>
+                    <div className="sub-menu-item">
+                    <button className="btn3" onClick={() => navigate("/InfoClicin")}>
+                     Qulayliklar
+                    </button> 
+                    </div>
+                    <div className="sub-menu-item">
+                    <button className="btn3" onClick={() => navigate("/InfoClicin")}>
+                     Sertifikat
+                    </button> 
+                    </div>
                 </div>
               </motion.div>
             </motion.div>
