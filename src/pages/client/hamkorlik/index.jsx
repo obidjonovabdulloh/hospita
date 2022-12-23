@@ -8,7 +8,7 @@ function Hamkor(){
                     <input type="text" placeholder="TEL:" className="fish" />
                     <input type="text" placeholder="Email" className="fish" />
                     <input type="text" placeholder="Sharx" className="fish" />
-                    <button className="ham_but"></button>
+                    <button className="ham_but">Resume Yuborish</button>
                 </form>
             </div>
         </>
