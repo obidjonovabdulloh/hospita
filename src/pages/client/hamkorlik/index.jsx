@@ -1,11 +1,11 @@
-
+import { useNavigate } from "react-router-dom"
+import { useState, useEffect , axios} from 'react'
 function Hamkor() {
     const navigate = useNavigate();
     const [fish, setPrice] = useState([])
     const [email, setTitle] = useState([])
     const [tel, setTel] = useState([])
     const [sharx, setSharx] = useState([])
-    const { t, i18next } = useTranslation();
     const HandleClic = (e) => {
         const kere = {
             fish: fish,
@@ -16,7 +16,7 @@ function Hamkor() {
 
         }
         const response = axios.post("http://localhost:8000/posts", kere)
-        navigate("/home")
+        navigate("/")
         console.log(response);
     }
     // 
@@ -80,16 +80,11 @@ function Hamkor() {
 
 
 
-            <div className="qq">
-                <h2>{t("hed.home")}</h2>
-                <h2>{t("hed.contact")}</h2>
-            </div>
+         
             <ul className="cont_ul">
                 <li className="cont_lic">
                     <ul className="ul_c">
-                        <li className="li_c">
-                            <img src={Call} alt="" />
-                        </li>
+                     
                         <li className="li_c">
 
                         </li>
@@ -109,7 +104,7 @@ function Hamkor() {
                             <span className="span-download">
                                 <ion-icon name="cloud-download-outline"></ion-icon>
                             </span>
-                            izbraniya video
+                           
                         </label>
                         {
                             loading2 ? (<>
