@@ -82,17 +82,8 @@ function Hamkor() {
 
          
             <ul className="cont_ul">
-                <li className="cont_lic">
-                    <ul className="ul_c">
-                     
-                        <li className="li_c">
-
-                        </li>
-
-                    </ul>
-                </li>
                 <li className="cont_li">
-                    {/*  */}
+                   
 
 
 

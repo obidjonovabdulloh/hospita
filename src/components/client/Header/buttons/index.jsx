@@ -147,7 +147,7 @@ export default function Buttons() {
               onHoverStart={toggleHoverMenu2}
               onHoverEnd={toggleHoverMenu2}
             >
-             <NavLink to={"/news"}> <a href="#">
+             <NavLink to={"/hamkor"}> <a href="#">
                 {t("Header.7")} <i className="bx bxs-chevron-down"></i>
               </a></NavLink>
               <motion.div
@@ -157,9 +157,9 @@ export default function Buttons() {
                 variants={subMenuAnimate}
               >
                 <div className="sub-menu-background" />
-                <div className="sub-menu-container">
+                {/* <div className="sub-menu-container">
                   <div className="sub-menu-item">Submenu Item 1</div>
-                </div>
+                </div> */}
               </motion.div>
             </motion.div>
           </div>
