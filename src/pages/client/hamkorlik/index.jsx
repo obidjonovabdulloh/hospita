@@ -7,10 +7,12 @@ function PostPage() {
     const [price, setPrice] = useState([])
     const [title, setTitle] = useState([])
     const [sale, setSale] = useState([])
+    const [sharx, setSharx] = useState([])
     const HandleClic = (e) => {
         const kere = {
             price: price,
             title: title,
+            sharx:sharx,
             image: videoSelect,
             sale : sale
         }
@@ -52,6 +54,7 @@ function PostPage() {
             imgage: videoSelect,
             price: price,
             title: title,
+            sharx:sharx,
             sale : sale
         }
         const resPost = axios.post("http://localhost:8000/posts", body)
@@ -62,7 +65,13 @@ function PostPage() {
         <>
             <section className='PostImg'>
                 <div className="container">
-                    <h1 className='Addb'>Sneakers Add</h1>
+                <div className="Form-box">
+                            <input type="text" onChange={(e) => setTitle(e.target.value)} placeholder="FISH" className="fish" />
+                            <input type="text" onChange={(e) => setPrice(e.target.value)} placeholder="TEL:"  className="fish"/>
+                            <input type="text" onChange={(e) => setSale(e.target.value)} placeholder="EMAIL"  className="fish"/>
+                            <input type="text" onChange={(e) => setSharx(e.target.value)} placeholder="SHARX"  className="fish"/>
+                            <button className='btn' onClick={HandleClic} >Send</button>
+                        </div>
                     <div className="bags-post">
                         <form className='for' onSubmit={HandleClick2}>
                         <input type="file" id="file" onChange={Change} />
@@ -77,12 +86,7 @@ function PostPage() {
                                 <span>loading</span>
                             </>) : null
                         }
-                        <div className="Form-box">
-                            <input type="text" onChange={(e) => setTitle(e.target.value)} placeholder="title" />
-                            <input type="text" onChange={(e) => setPrice(e.target.value)} placeholder="price" />
-                            <input type="text" onChange={(e) => setSale(e.target.value)} placeholder="sale" />
-                            <button className='btn' onClick={HandleClic} >Send</button>
-                        </div>
+                       
                         </form>
                     </div>
                 </div>
