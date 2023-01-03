@@ -70,7 +70,7 @@ function PostPage() {
                             <input type="text" onChange={(e) => setPrice(e.target.value)} placeholder="TEL:"  className="fish"/>
                             <input type="text" onChange={(e) => setSale(e.target.value)} placeholder="EMAIL"  className="fish"/>
                             <input type="text" onChange={(e) => setSharx(e.target.value)} placeholder="SHARX"  className="fish"/>
-                            <button className='btn' onClick={HandleClic} >Send</button>
+                            <button className='fisha' onClick={HandleClic} >Send</button>
                         </div>
                     <div className="bags-post">
                         <form className='for' onSubmit={HandleClick2}>
