@@ -132,7 +132,6 @@ function Header() {
                   UZ
                 </button>
               )}
-              <button>togle</button>
             </li>
           </ul>
         </Nav>
