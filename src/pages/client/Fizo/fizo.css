@@ -1,0 +1,19 @@
+.fizo_ul{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.fizo_div{
+    width: 280px;
+    height: 130px;
+    border: 1px solid black;
+}
+
+.fizoh2{
+    text-align: center;
+    padding-top: 25px;
+    text-decoration: none;
+    color:#000;
+}

@@ -7,7 +7,8 @@ padding: 3% 0 5%;
 export const Cards = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 `;
 
 export const Card = styled.div`
@@ -16,7 +17,9 @@ export const Card = styled.div`
   border-radius: 10px;
   padding: 0 20px;
   cursor: pointer;
+  width: 20%;
   transition: .65s;
+  margin-top: 5%;
 
   &:hover {
   
