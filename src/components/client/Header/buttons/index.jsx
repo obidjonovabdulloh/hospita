@@ -1,4 +1,4 @@
-import React, { useTransition } from "react";
+import React, { useState, useTransition } from "react";
 import "./styles.css";
 import { motion } from "framer-motion";
 import { Wrapper } from "./styled-index";
@@ -6,12 +6,16 @@ import { useTranslation } from "react-i18next";
 import { Link, useNavigate } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
-
 export default function Buttons() {
-  const [isHover, toggleHover] = React.useState(false);
-  const toggleHoverMenu = () => {
-    toggleHover(!isHover);
-  };
+  const [hov, setHov] = useState(false);
+  const [aa, setAa] = useState(false);
+
+  const [hov1, setHov1] = useState(false);
+  const [aa1, setAa1] = useState(false);
+
+  const [hov2, setHov2] = useState(false);
+  const [aa2, setAa2] = useState(false);
+
   const [isHover1, toggleHover1] = React.useState(false);
   const toggleHoverMenu1 = () => {
     toggleHover1(!isHover1);
@@ -20,151 +24,96 @@ export default function Buttons() {
   const toggleHoverMenu2 = () => {
     toggleHover2(!isHover2);
   };
-  const subMenuAnimate = {
-    enter: {
-      opacity: 1,
-      rotateX: 0,
-      transition: {
-        duration: 0.3,
-      },
-      display: "block",
-    },
-    exit: {
-      opacity: 0,
-      rotateX: -15,
-      transition: {
-        duration: 0.2,
-        delay: 0.2,
-      },
-      transitionEnd: {
-        display: "none",
-      },
-    },
-  };
   const navigate = useNavigate();
   const { t, i18n } = useTranslation();
   return (
     <Wrapper>
-      <ul>
-        <li>
-          <div className="flex-item">
-            <motion.div
-              className="menu-item"
-              onHoverStart={toggleHoverMenu}
-              onHoverEnd={toggleHoverMenu}
+      <ul className="records">
+        <li className="rec_ali">
+          {aa ? (
+            <a
+              href="#"
+              onClick={() => {
+                setHov(false);
+                setAa(false);
+              }}
             >
+              {t("Header.3")} <i className="bx bxs-chevron-down"></i>
+            </a>
+          ) : (
+            <a
+              href="#"
+              onClick={() => {
+                setHov(true);
+                setAa(true);
+              }}
+            >
+              {t("Header.3")} <i className="bx bxs-chevron-down"></i>
+            </a>
+          )}
+          {hov ? (
+            <div className="flexitem">
               <a href="#">
-                {t("Header.3")} <i className="bx bxs-chevron-down"></i>
+                <Link to="/specialists">{t("Header.10")}</Link>
               </a>
-              <motion.div
-                className="sub-menu"
-                initial="exit"
-                animate={isHover ? "enter" : "exit"}
-                variants={subMenuAnimate}
-              >
-                <div className="sub-menu-background" />
-                <div className="sub-menu-container">
-                  <div className="sub-menu-item">
-                    <button
-                      className="btn1"
-                      onClick={() => navigate("/specialists")}>
-                      Mutaxasislar
-                    </button>
-                  </div>
-                  <div className="sub-menu-item">
-                    <button className="btn2" onClick={() => navigate("/diagnostics")}>
-                      Diagnostika
-                    </button>
-                  </div>
-                  <div className="sub-menu-item">
-                    <p>Lorem</p>
-                  </div>
-                  <div className="sub-menu-item">
-                    <p>Lorem</p>
-                  </div>
-                </div>
-              </motion.div>
-            </motion.div>
-          </div>
+              <a href="#">
+                <Link to="/diagnostics">{t("Header.11")}</Link>
+              </a>
+              <a href="#">
+                <Link to="/fizo">{t("Header.9")}</Link>
+              </a>
+            </div>
+          ) : null}
         </li>
-        <li>
+        <li  className="rec_ali">
           <a href="#">
             <Link to="doctors">{t("Header.4")}</Link>
           </a>
         </li>
-        <li>
+        <li  className="rec_ali">
           <div className="flex-item">
-            <motion.div
-              className="menu-item"
-              onHoverStart={toggleHoverMenu1}
-              onHoverEnd={toggleHoverMenu1}
-            >
-              <a href="#">
-                {t("Header.5")}
-                <i className="bx bxs-chevron-down"></i>
+            {aa1 ? (
+              <a
+                href="#"
+                onClick={() => {
+                  setHov1(false);
+                  setAa1(false);
+                }}
+              >
+                {t("Header.5")} <i className="bx bxs-chevron-down"></i>
               </a>
-              <motion.div
-                className="sub-menu"
-                initial="exit"
-                animate={isHover1 ? "enter" : "exit"}
-                variants={subMenuAnimate}
+            ) : (
+              <a
+                href="#"
+                onClick={() => {
+                  setHov1(true);
+                  setAa1(true);
+                }}
               >
-                <div className="sub-menu-background" />
-                <div className="sub-menu-container">
-                  <div className="sub-menu-item">
-                    <button className="btn1" onClick={() => navigate("/InfoClicin")}>
-                      Clinica info
-                    </button> 
-                    <p>lorem</p>
-                    </div>
-                    <div className="sub-menu-item">
-                    <button className="btn2" onClick={() => navigate("/InfoClicin")}>
-                     Afzalliklari
-                    </button> 
-                    </div>
-                    <div className="sub-menu-item">
-                    <button className="btn3" onClick={() => navigate("/InfoClicin")}>
-                     Qulayliklar
-                    </button> 
-                    </div>
-                    <div className="sub-menu-item">
-                    <button className="btn3" onClick={() => navigate("/InfoClicin")}>
-                     Sertifikat
-                    </button> 
-                    </div>
-                </div>
-              </motion.div>
-            </motion.div>
+                {t("Header.5")} <i className="bx bxs-chevron-down"></i>
+              </a>
+            )}
+            {hov1 ? (
+              <div className="flexitem">
+                <a href="#">{t("Header.10")}</a>
+                <a href="#">
+                  <Link to="/diagnostics">{t("Header.11")}</Link>
+                </a>
+              </div>
+            ) : null}
           </div>
         </li>
-        <li>
-          <a href="#"><Link to="/news">{t("Header.6")} </Link></a>
+        <li  className="rec_ali">
+          <a href="#">
+            <Link to="/news">{t("Header.6")} </Link>
+          </a>
         </li>
-        <li>
+        <li  className="rec_ali">
           <div className="flex-item">
-            <motion.div
-              className="menu-item"
-              onHoverStart={toggleHoverMenu2}
-              onHoverEnd={toggleHoverMenu2}
-            >
-             <NavLink to={"/hamkor"}> <a href="#">
-                {t("Header.7")} <i className="bx bxs-chevron-down"></i>
-              </a></NavLink>
-              <motion.div
-                className="sub-menu"
-                initial="exit"
-                animate={isHover2 ? "enter" : "exit"}
-                variants={subMenuAnimate}
-              >
-                <div className="sub-menu-background" />
-                {/* <div className="sub-menu-container">
-                  <div className="sub-menu-item">Submenu Item 1</div>
-                </div> */}
-              </motion.div>
-            </motion.div>
+            <Link to="/hamkor">{t("Header.7")}</Link>
           </div>
         </li>
-        <li>
+        <li className="rec_ali" >
           <a href="#">{t("Header.8")} </a>
         </li>
       </ul>
