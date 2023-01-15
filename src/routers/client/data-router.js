@@ -27,6 +27,7 @@ import Fizot13 from "../../pages/client/Fizo13";
 import Fizot14 from "../../pages/client/Fizo14";
 import Hamkor from "../../pages/client/hamkorlik";
 import News from "../../pages/news";
+import Qabul from "../../pages/client/Qabul";
 
 
 export const DataRouters = [
@@ -174,6 +175,11 @@ export const DataRouters = [
     id: 29,
     path: "/Sertifikat",
     Element: <Sertifikat/>,
+  },
+  {
+    id: 29,
+    path: "/Qabul",
+    Element: <Qabul/>,
   },
 
 ];
