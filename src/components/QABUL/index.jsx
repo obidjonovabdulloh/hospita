@@ -62,6 +62,7 @@ const [openm, setOpenM] = React.useState(false);
                       <h2>Qabulga yozilish</h2>
                       <input required placeholder="F.I.SH" type="text" />
                       <input required type="number" placeholder="Telefon raqam" />
+                      <input required placeholder="date" type="date" />
                       <button>Submit</button>
                       
                       </div>
@@ -91,6 +92,7 @@ const [openm, setOpenM] = React.useState(false);
                       <h2>qabulga yozilish</h2>
                       <input required placeholder="F.I.SH" type="text" />
                       <input required type="number" placeholder="Telefon raqam" />
+                      <input required placeholder="date" type="date" />
                       <button>Submit</button>
                       
                       </div>
@@ -120,6 +122,7 @@ const [openm, setOpenM] = React.useState(false);
                       <h2>Qabulga yozilish</h2>
                       <input required placeholder="F.I.SH" type="text" />
                       <input required type="number" placeholder="Telefon raqam" />
+                      <input required placeholder="date" type="date" />
                       <button>Submit</button>
                       
                       </div>
@@ -147,8 +150,10 @@ const [openm, setOpenM] = React.useState(false);
                       <Box sx={style}>
                       <div className="divc">
                       <h2>Qabulga yozilish</h2>
+
                       <input required placeholder="F.I.SH" type="text" />
                       <input required type="number" placeholder="Telefon raqam" />
+                      <input required placeholder="date" type="date" />
                       <button>Submit</button>
                       
                       </div>
@@ -178,6 +183,7 @@ const [openm, setOpenM] = React.useState(false);
                       <h2>Qabulga yozilish</h2>
                       <input required placeholder="F.I.SH" type="text" />
                       <input required type="number" placeholder="Telefon raqam" />
+                      <input required placeholder="date" type="date" />
                       <button>Submit</button>
                       
                       </div>
@@ -208,6 +214,7 @@ const [openm, setOpenM] = React.useState(false);
                       <h2>Qabulga yozilish</h2>
                       <input required placeholder="F.I.SH" type="text" />
                       <input required type="number" placeholder="Telefon raqam" />
+                      <input required placeholder="date" type="date" />
                       <button>Submit</button>
                       
                       </div>
