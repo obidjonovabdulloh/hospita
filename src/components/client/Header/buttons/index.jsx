@@ -95,12 +95,20 @@ export default function Buttons() {
             )}
             {hov1 ? (
               <div className="flexitem">
-                <a href="#">{t("Header.10")}</a>
+                <a href="#">{t("Header.12")}</a>
                 <a href="#">
-                  <Link to="/diagnostics">{t("Header.11")}</Link>
+                  <Link to="/diagnostics">{t("Header.13")}</Link>
+                </a>
+                <a href="#">
+                  <Link to="/diagnostics">{t("Header.14")}</Link>
+                </a>
+                 <a href="#">
+                  <Link to="/diagnostics">{t("Header.15")}</Link>
                 </a>
               </div>
+              
             ) : null}
+            
           </div>
         </li>
         <li  className="rec_ali">
