@@ -12,27 +12,15 @@ import { useState } from "react";
 import { Button } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import * as React from 'react';
-import Box from '@mui/material/Box';
+
 import { NavLink } from "react-router-dom";
-import Modal from '@mui/material/Modal';
+
 import "./index.css"
-const style = {
-  position: 'absolute' ,
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
-  width: 400,
-  bgcolor: 'background.paper',
-  boxShadow: 24,
-  p: 4,
-  bradius: '20px',
-};
+
 
 
 function Header() {
-  const [openm, setOpenM] = React.useState(false);
-  const handleOpen = () => setOpenM(true);
-  const handleClose = () => setOpenM(false);
+  
 
   const { t, i18n } = useTranslation();
   const [open, setOpen] = useState(false);
@@ -60,7 +48,7 @@ function Header() {
           <ul>
             <li>
               <NavLink to={"/aksiya"}>
-                <p>
+                <p >
                   <Lottie animationData={percentage} />
                 </p>
                 {t("Header.0")}
@@ -75,32 +63,12 @@ function Header() {
               </NavLink>
             </li>
             <li>
-              
-              <div>
-                <Button onClick={handleOpen}><a href="#">
-                <p>
+              <NavLink to={"/Qabul"}>
+              <p>
                   <Lottie animationData={writing} />
                 </p>
-                {t("Header.2")}
-              </a></Button>
-                    <Modal
-                      open={openm}
-                      onClose={handleClose}
-                      aria-labelledby="modal-modal-title"
-                      aria-describedby="modal-modal-description"
-                    >
-                      <Box sx={style}>
-                      <div className="divc">
-                      <h2>Qabulga yozilish</h2>
-                      <input required placeholder="F.I.SH" type="text" />
-                      <input required type="number" placeholder="Telefon raqam" />
-                      <button>Submit</button>
-                      
-                      </div>
-
-                      </Box>
-                    </Modal>
-                </div>
+                {t("Header.2")}</NavLink>
+              
             </li>
             <li>
               <a href="tel:+998972770303 ">
@@ -156,7 +124,7 @@ function Header() {
                 </>
               ) : (
                 <button className="buttonUz" value="uz" onClick={HendelChange2}>
-                  UZ
+                  UZ  
                 </button>
               )}
             </li>

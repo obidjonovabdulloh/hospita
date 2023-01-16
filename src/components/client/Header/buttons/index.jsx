@@ -30,40 +30,27 @@ export default function Buttons() {
     <Wrapper>
       <ul className="records">
         <li className="rec_ali">
-          {aa ? (
-            <a
-              href="#"
-              onClick={() => {
-                setHov(false);
-                setAa(false);
-              }}
-            >
-              {t("Header.3")} <i className="bx bxs-chevron-down"></i>
-            </a>
-          ) : (
-            <a
-              href="#"
-              onClick={() => {
-                setHov(true);
-                setAa(true);
-              }}
-            >
-              {t("Header.3")} <i className="bx bxs-chevron-down"></i>
-            </a>
-          )}
-          {hov ? (
-            <div className="flexitem">
-              <a href="#">
+          
+          
+            <div class="dropdown">
+            <span className="pointer">{t("Header.3")} </span>
+            <i className="bx bxs-chevron-down"></i>
+              <div class="dropdown-content">
+              <a className="linkaa" href="#">
                 <Link to="/specialists">{t("Header.10")}</Link>
               </a>
-              <a href="#">
+              <a className="linkaa" href="#">
                 <Link to="/diagnostics">{t("Header.11")}</Link>
               </a>
-              <a href="#">
+              <a className="linkaa" href="#">
                 <Link to="/fizo">{t("Header.9")}</Link>
               </a>
+              </div>
             </div>
-          ) : null}
+              
+            
+            
+          
         </li>
         <li  className="rec_ali">
           <a href="#">
@@ -71,45 +58,28 @@ export default function Buttons() {
           </a>
         </li>
         <li  className="rec_ali">
-          <div className="flex-item">
-            {aa1 ? (
-              <a
-                href="#"
-                onClick={() => {
-                  setHov1(false);
-                  setAa1(false);
-                }}
-              >
-                {t("Header.5")} <i className="bx bxs-chevron-down"></i>
+        <div class="dropdown">
+        <span className="pointer">{t("Header.5")} </span>
+        <i className="bx bxs-chevron-down"></i>
+              <div class="dropdown-content">
+              <a className="linkaa" href="#">
+                <Link to="/InfoClinic">{t("Header.12")}</Link>
               </a>
-            ) : (
-              <a
-                href="#"
-                onClick={() => {
-                  setHov1(true);
-                  setAa1(true);
-                }}
-              >
-                {t("Header.5")} <i className="bx bxs-chevron-down"></i>
+              <a className="linkaa" href="#">
+                <Link to="/Afzallik">{t("Header.13")}</Link>
               </a>
-            )}
-            {hov1 ? (
-              <div className="flexitem">
-                <a href="#">{t("Header.12")}</a>
-                <a href="#">
-                  <Link to="/diagnostics">{t("Header.13")}</Link>
-                </a>
-                <a href="#">
-                  <Link to="/diagnostics">{t("Header.14")}</Link>
-                </a>
-                 <a href="#">
-                  <Link to="/diagnostics">{t("Header.15")}</Link>
-                </a>
+              <a className="linkaa" href="#">
+                <Link to="/Qulaylik">{t("Header.14")}</Link>
+              </a>
+              <a className="" href="#">
+                <Link to="/Sertifikat">{t("Header.15")}</Link>
+              </a>
               </div>
-              
-            ) : null}
-            
-          </div>
+         </div>
+           
+               
+             
+          
         </li>
         <li  className="rec_ali">
           <a href="#">
