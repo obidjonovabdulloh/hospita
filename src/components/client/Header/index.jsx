@@ -124,7 +124,7 @@ function Header() {
                 </>
               ) : (
                 <button className="buttonUz" value="uz" onClick={HendelChange2}>
-                  UZ
+                  UZ  
                 </button>
               )}
             </li>
