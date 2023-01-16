@@ -9,59 +9,90 @@ function Specialists() {
   return (
     <Wrapper>
       <Cards data-aos="zoom-out">
-        <Card onClick={HendelClick}>
-          <h2>Terepert</h2>
-        </Card>
-        <Card onClick={HendelClick}>
-          <h2>Kardiolog</h2>
-        </Card>
-        <Card onClick={HendelClick}>
-          <h2>EndikRonolog</h2>
-        </Card>
+
+        <div className="lila">
+          <div onClick={HendelClick} className="center">
+            <a className="cen" href="#"><span className="cent" data-attr="Terepert"></span><span data-attr="Now"></span></a>
+          </div>
+        </div>
+        <div className="lila">
+          <div onClick={HendelClick} className="center">
+            <a className="cen" href="#"><span className="cent" data-attr="Terepert"></span><span data-attr="Now"></span></a>
+          </div>
+        </div>
+        <div className="lila">
+          <div onClick={HendelClick} className="center">
+            <a className="cen" href="#"><span className="cent" data-attr="Terepert"></span><span data-attr="Now"></span></a>
+          </div>
+        </div>
       </Cards>
       <Cards data-aos="zoom-out">
-        <Card onClick={HendelClick}>
-          <h2>Neveralog</h2>
-        </Card>
-        <Card onClick={HendelClick}>
-          <h2>Ginokolog</h2>
-        </Card>
-        <Card onClick={HendelClick}>
-          <h2>Dermatolog</h2>
-        </Card>
+        <div className="lila">
+          <div onClick={HendelClick} className="center">
+            <a className="cen" href="#"><span className="cent" data-attr="Terepert"></span><span data-attr="Now"></span></a>
+          </div>
+        </div>
+        <div className="lila">
+          <div onClick={HendelClick} className="center">
+            <a className="cen" href="#"><span className="cent" data-attr="Terepert"></span><span data-attr="Now"></span></a>
+          </div>
+        </div>
+        <div className="lila">
+          <div onClick={HendelClick} className="center">
+            <a className="cen" href="#"><span className="cent" data-attr="Terepert"></span><span data-attr="Now"></span></a>
+          </div>
+        </div>
       </Cards>
       <Cards data-aos="zoom-out">
-        <Card onClick={HendelClick}>
-          <h2>Urolog</h2>
-        </Card>
-        <Card onClick={HendelClick}>
-          <h2>Lor</h2>
-        </Card>
-        <Card onClick={HendelClick}>
-          <h2>Okulist</h2>
-        </Card>
+        <div className="lila">
+          <div onClick={HendelClick} className="center">
+            <a className="cen" href="#"><span className="cent" data-attr="Terepert"></span><span data-attr="Now"></span></a>
+          </div>
+        </div>
+        <div className="lila">
+          <div onClick={HendelClick} className="center">
+            <a className="cen" href="#"><span className="cent" data-attr="Terepert"></span><span data-attr="Now"></span></a>
+          </div>
+        </div>
+        <div className="lila">
+          <div onClick={HendelClick} className="center">
+            <a className="cen" href="#"><span className="cent" data-attr="Terepert"></span><span data-attr="Now"></span></a>
+          </div>
+        </div>
       </Cards>
       <Cards data-aos="zoom-out">
-        <Card onClick={HendelClick}>
-          <h2>Urolog</h2>
-        </Card>
-        <Card onClick={HendelClick}>
-          <h2>Lor</h2>
-        </Card>
-        <Card onClick={HendelClick}>
-          <h2>Okulist</h2>
-        </Card>
+        <div className="lila">
+          <div onClick={HendelClick} className="center">
+            <a className="cen" href="#"><span className="cent" data-attr="Terepert"></span><span data-attr="Now"></span></a>
+          </div>
+        </div>
+        <div className="lila">
+          <div onClick={HendelClick} className="center">
+            <a className="cen" href="#"><span className="cent" data-attr="Terepert"></span><span data-attr="Now"></span></a>
+          </div>
+        </div>
+        <div className="lila">
+          <div onClick={HendelClick} className="center">
+            <a className="cen" href="#"><span className="cent" data-attr="Terepert"></span><span data-attr="Now"></span></a>
+          </div>
+        </div>
       </Cards>
       <Cards data-aos="zoom-out">
-        <Card onClick={HendelClick}>
-          <h2>Urolog</h2>
-        </Card>
-        <Card onClick={HendelClick}>
-          <h2>Lor</h2>
-        </Card>
-        <Card onClick={HendelClick}>
-          <h2>Okulist</h2>
-        </Card>
+        <div className="lila">
+          <div onClick={HendelClick} className="center">
+            <a className="cen" href="#"><span className="cent" data-attr="Terepert"></span><span data-attr="Now"></span></a>
+          </div>
+        </div>
+        <div className="lila">
+          <div onClick={HendelClick} className="center">
+            <a className="cen" href="#"><span className="cent" data-attr="Terepert"></span><span data-attr="Now"></span></a>
+          </div>
+        </div>
+        <div className="lila">
+          <div onClick={HendelClick} className="center">
+            <a className="cen" href="#"><span className="cent" data-attr="Terepert"></span><span data-attr="Now"></span></a>
+          </div>
+        </div>
       </Cards>
     </Wrapper>
   );

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import './ali.css'
 // import Slider from "../../components/client/Home/Slider"
 import Slider from "react-slick";
@@ -59,3 +60,5 @@ function News() {
     )
 }
 export default News
+=======
+>>>>>>> 630f52371353a50785989733a9439839fa756f79
