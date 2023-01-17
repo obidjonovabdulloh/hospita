@@ -6,19 +6,22 @@ function Diognostika() {
       <Wrapper>
         <Cards data-aos="zoom-out">
           {/* <Card > */}
-          <div className="center">
-                                        <a className="cen" href="#"><span className="cent" data-attr="MRT"></span><span data-attr="Now"></span></a>
-                                    </div>
+          <div >
+
+            <a href="#" id="fli" className="btn-flip" data-back="loremm" data-front="Ingalatsiya"></a>
+          </div>
           {/* </Card> */}
           {/* <Card> */}
-          <div className="center">
-                                        <a className="cen" href="#"><span className="cent" data-attr="RAQAMLI RENGEN"></span><span data-attr="Now"></span></a>
-                                    </div>
+          <div >
+
+            <a href="#" id="fli" className="btn-flip" data-back="loremm" data-front="Ingalatsiya"></a>
+          </div>
           {/* </Card> */}
           {/* <Card> */}
-          <div className="center">
-                                        <a className="cen" href="#"><span className="cent" data-attr="UZI"></span><span data-attr="Now"></span></a>
-                                    </div>
+          <div >
+
+            <a href="#" id="fli" className="btn-flip" data-back="loremm" data-front="Ingalatsiya"></a>
+          </div>
           {/* </Card> */}
         </Cards>
       </Wrapper>

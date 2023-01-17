@@ -11,86 +11,101 @@ function Specialists() {
       <Cards data-aos="zoom-out">
 
         <div className="lila">
-          <div onClick={HendelClick} className="center">
-            <a className="cen" href="#"><span className="cent" data-attr="Terepert"></span><span data-attr="Now"></span></a>
+          <div onClick={HendelClick}>
+
+            <a href="#" id="fli" className="btn-flip" data-back="loremm" data-front="Ingalatsiya"></a>
           </div>
         </div>
         <div className="lila">
-          <div onClick={HendelClick} className="center">
-            <a className="cen" href="#"><span className="cent" data-attr="Terepert"></span><span data-attr="Now"></span></a>
+          <div onClick={HendelClick}>
+
+            <a href="#" id="fli" className="btn-flip" data-back="loremm" data-front="Ingalatsiya"></a>
           </div>
         </div>
         <div className="lila">
-          <div onClick={HendelClick} className="center">
-            <a className="cen" href="#"><span className="cent" data-attr="Terepert"></span><span data-attr="Now"></span></a>
-          </div>
-        </div>
-      </Cards>
-      <Cards data-aos="zoom-out">
-        <div className="lila">
-          <div onClick={HendelClick} className="center">
-            <a className="cen" href="#"><span className="cent" data-attr="Terepert"></span><span data-attr="Now"></span></a>
-          </div>
-        </div>
-        <div className="lila">
-          <div onClick={HendelClick} className="center">
-            <a className="cen" href="#"><span className="cent" data-attr="Terepert"></span><span data-attr="Now"></span></a>
-          </div>
-        </div>
-        <div className="lila">
-          <div onClick={HendelClick} className="center">
-            <a className="cen" href="#"><span className="cent" data-attr="Terepert"></span><span data-attr="Now"></span></a>
+          <div onClick={HendelClick}>
+
+            <a href="#" id="fli" className="btn-flip" data-back="loremm" data-front="Ingalatsiya"></a>
           </div>
         </div>
       </Cards>
       <Cards data-aos="zoom-out">
         <div className="lila">
-          <div onClick={HendelClick} className="center">
-            <a className="cen" href="#"><span className="cent" data-attr="Terepert"></span><span data-attr="Now"></span></a>
+          <div onClick={HendelClick}>
+
+            <a href="#" id="fli" className="btn-flip" data-back="loremm" data-front="Ingalatsiya"></a>
           </div>
         </div>
         <div className="lila">
-          <div onClick={HendelClick} className="center">
-            <a className="cen" href="#"><span className="cent" data-attr="Terepert"></span><span data-attr="Now"></span></a>
+          <div onClick={HendelClick}>
+
+            <a href="#" id="fli" className="btn-flip" data-back="loremm" data-front="Ingalatsiya"></a>
           </div>
         </div>
         <div className="lila">
-          <div onClick={HendelClick} className="center">
-            <a className="cen" href="#"><span className="cent" data-attr="Terepert"></span><span data-attr="Now"></span></a>
-          </div>
-        </div>
-      </Cards>
-      <Cards data-aos="zoom-out">
-        <div className="lila">
-          <div onClick={HendelClick} className="center">
-            <a className="cen" href="#"><span className="cent" data-attr="Terepert"></span><span data-attr="Now"></span></a>
-          </div>
-        </div>
-        <div className="lila">
-          <div onClick={HendelClick} className="center">
-            <a className="cen" href="#"><span className="cent" data-attr="Terepert"></span><span data-attr="Now"></span></a>
-          </div>
-        </div>
-        <div className="lila">
-          <div onClick={HendelClick} className="center">
-            <a className="cen" href="#"><span className="cent" data-attr="Terepert"></span><span data-attr="Now"></span></a>
+          <div onClick={HendelClick}>
+
+            <a href="#" id="fli" className="btn-flip" data-back="loremm" data-front="Ingalatsiya"></a>
           </div>
         </div>
       </Cards>
       <Cards data-aos="zoom-out">
         <div className="lila">
-          <div onClick={HendelClick} className="center">
-            <a className="cen" href="#"><span className="cent" data-attr="Terepert"></span><span data-attr="Now"></span></a>
+          <div onClick={HendelClick}>
+
+            <a href="#" id="fli" className="btn-flip" data-back="loremm" data-front="Ingalatsiya"></a>
           </div>
         </div>
         <div className="lila">
-          <div onClick={HendelClick} className="center">
-            <a className="cen" href="#"><span className="cent" data-attr="Terepert"></span><span data-attr="Now"></span></a>
+          <div onClick={HendelClick}>
+
+            <a href="#" id="fli" className="btn-flip" data-back="loremm" data-front="Ingalatsiya"></a>
           </div>
         </div>
         <div className="lila">
-          <div onClick={HendelClick} className="center">
-            <a className="cen" href="#"><span className="cent" data-attr="Terepert"></span><span data-attr="Now"></span></a>
+          <div onClick={HendelClick}>
+
+            <a href="#" id="fli" className="btn-flip" data-back="loremm" data-front="Ingalatsiya"></a>
+          </div>
+        </div>
+      </Cards>
+      <Cards data-aos="zoom-out">
+        <div className="lila">
+          <div onClick={HendelClick}>
+
+            <a href="#" id="fli" className="btn-flip" data-back="loremm" data-front="Ingalatsiya"></a>
+          </div>
+        </div>
+        <div className="lila">
+          <div onClick={HendelClick}>
+
+            <a href="#" id="fli" className="btn-flip" data-back="loremm" data-front="Ingalatsiya"></a>
+          </div>
+        </div>
+        <div className="lila">
+          <div onClick={HendelClick}>
+
+            <a href="#" id="fli" className="btn-flip" data-back="loremm" data-front="Ingalatsiya"></a>
+          </div>
+        </div>
+      </Cards>
+      <Cards data-aos="zoom-out">
+        <div className="lila">
+          <div onClick={HendelClick}>
+
+            <a href="#" id="fli" className="btn-flip" data-back="loremm" data-front="Ingalatsiya"></a>
+          </div>
+        </div>
+        <div className="lila">
+          <div onClick={HendelClick}>
+
+            <a href="#" id="fli" className="btn-flip" data-back="loremm" data-front="Ingalatsiya"></a>
+          </div>
+        </div>
+        <div className="lila">
+          <div onClick={HendelClick}>
+
+            <a href="#" id="fli" className="btn-flip" data-back="loremm" data-front="Ingalatsiya"></a>
           </div>
         </div>
       </Cards>

@@ -211,14 +211,34 @@
     top: 0;
     left: 0;
     opacity: 1;
-    color: #adadaf;
+    color: #000;
     display: block;
     /* padding: 0 30px; */
     line-height: 40px;
     transition: 0.5s;
     position: relative;
-    background: #323237;
+    background:#34e065;
+    opacity: 0.8;
+
     content: attr(data-front);
     transform: translateY(-30%) translateX(-10%) rotateX(0);
   }
 
+
+
+
+.news_li{
+    width: 310px;
+    margin: 0 auto;
+    text-align: center;
+    height: 400px;
+    background-color:bisque;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.news_li_img{
+    width: 280px;
+    height: 250px;
+    border-radius: 10px;
+}
