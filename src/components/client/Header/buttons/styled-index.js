@@ -43,12 +43,14 @@ export const Wrapper = styled.div`
           font-size: 10px;
         }
       }
+      .open{
+      padding-bottom: 5%;
+      }
     }
   }
 
   .flexitem {
     position: absolute;
-    margin-top: 1%;
     border: 1px solid #34e065;
     padding: 1% 1%;
     border-radius: 5px;

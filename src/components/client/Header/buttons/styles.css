@@ -31,7 +31,7 @@
   border: none;
   background-color: transparent;
   font-weight: 600;
-  letter-spacing: 1px;  
+  letter-spacing: 1px;
 }
 
 .sub-menu-item .btn2 {
@@ -42,14 +42,40 @@
   border: none;
   background-color: transparent;
   font-weight: 600;
-  letter-spacing: 1px;  
+  letter-spacing: 1px;
 }
-.sub-menu-item .btn3{
+.sub-menu-item .btn3 {
   border: none;
   background-color: transparent;
   font-weight: 600;
-  letter-spacing: 1px; 
+  letter-spacing: 1px;
 }
 .sub-menu-item p {
-color: transparent;
+  color: transparent;
+}
+.flexitem {
+  display: none;
+}
+.lidrop:hover .flexitem {
+  display: block !important;
+}
+
+.flexitem1 {
+  position: absolute;
+  border: 1px solid #34e065;
+  padding: 1% 1%;
+  border-radius: 5px;
+  background-color: white;
+  z-index: 1000;
+  display: none;
+}
+.flexitem1 a {
+  margin: 5% 0%;
+}
+
+.open2:hover .flexitem1 {
+  display: block !important;
+}
+.open3{
+padding-bottom: 5%;
 }

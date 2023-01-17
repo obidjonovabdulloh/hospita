@@ -7,15 +7,6 @@ import { Link, useNavigate } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
 export default function Buttons() {
-  const [hov, setHov] = useState(false);
-  const [aa, setAa] = useState(false);
-
-  const [hov1, setHov1] = useState(false);
-  const [aa1, setAa1] = useState(false);
-
-  const [hov2, setHov2] = useState(false);
-  const [aa2, setAa2] = useState(false);
-
   const [isHover1, toggleHover1] = React.useState(false);
   const toggleHoverMenu1 = () => {
     toggleHover1(!isHover1);
@@ -29,78 +20,37 @@ export default function Buttons() {
   return (
     <Wrapper>
       <ul>
-        <li>
-          {aa ? (
-            <a
-              href="#"
-              onClick={() => {
-                setHov(false);
-                setAa(false);
-              }}
-            >
-              {t("Header.3")} <i className="bx bxs-chevron-down"></i>
+        <li className="lidrop">
+          <a href="#" className="open">
+            {t("Header.3")} <i className="bx bxs-chevron-down"></i>
+          </a>
+          <div className="flexitem">
+            <a href="#">
+              <Link to="/specialists">{t("Header.10")}</Link>
             </a>
-          ) : (
-            <a
-              href="#"
-              onClick={() => {
-                setHov(true);
-                setAa(true);
-              }}
-            >
-              {t("Header.3")} <i className="bx bxs-chevron-down"></i>
+            <a href="#">
+              <Link to="/diagnostics">{t("Header.11")}</Link>
             </a>
-          )}
-          {hov ? (
-            <div className="flexitem">
-              <a href="#">
-                <Link to="/specialists">{t("Header.10")}</Link>
-              </a>
-              <a href="#">
-                <Link to="/diagnostics">{t("Header.11")}</Link>
-              </a>
-              <a href="#">
-                <Link to="/fizo">{t("Header.9")}</Link>
-              </a>
-            </div>
-          ) : null}
+            <a href="#">
+              <Link to="/fizo">{t("Header.9")}</Link>
+            </a>
+          </div>
         </li>
         <li>
           <a href="#">
             <Link to="doctors">{t("Header.4")}</Link>
           </a>
         </li>
-        <li>
-          <div className="flex-item">
-            {aa1 ? (
-              <a
-                href="#"
-                onClick={() => {
-                  setHov1(false);
-                  setAa1(false);
-                }}
-              >
-                {t("Header.5")} <i className="bx bxs-chevron-down"></i>
-              </a>
-            ) : (
-              <a
-                href="#"
-                onClick={() => {
-                  setHov1(true);
-                  setAa1(true);
-                }}
-              >
-                {t("Header.5")} <i className="bx bxs-chevron-down"></i>
-              </a>
-            )}
-            {hov1 ? (
-              <div className="flexitem">
-                <a href="#">{t("Header.10")}</a>
-                <a href="#">
-                  <Link to="/diagnostics">{t("Header.11")}</Link>
-                </a>
-              </div>
-            ) : null}
+        <li className="open2">
+          <a href="#" className="open3">
+            {t("Header.5")}
+            <i className="bx bxs-chevron-down"></i>
+          </a>
+          <div className="flexitem1">
+            <a href="#">{t("Header.10")}</a>
+            <a href="#">
+              <Link to="/diagnostics">{t("Header.11")}</Link>
+            </a>
           </div>
         </li>
         <li>
