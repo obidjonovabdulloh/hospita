@@ -19,51 +19,70 @@ export default function Buttons() {
   const { t, i18n } = useTranslation();
   return (
     <Wrapper>
-      <ul>
-        <li className="lidrop">
-          <a href="#" className="open">
-            {t("Header.3")} <i className="bx bxs-chevron-down"></i>
-          </a>
-          <div className="flexitem">
-            <a href="#">
-              <Link to="/specialists">{t("Header.10")}</Link>
-            </a>
-            <a href="#">
-              <Link to="/diagnostics">{t("Header.11")}</Link>
-            </a>
-            <a href="#">
-              <Link to="/fizo">{t("Header.9")}</Link>
-            </a>
-          </div>
+      <ul className="records">
+        <li className="rec_ali">
+          
+          
+            <div class="dropdown">
+            <span className="pointer">{t("Header.3")} </span>
+            <i className="bx bxs-chevron-down"></i>
+              <div class="dropdown-content">
+              <a className="linkaa" href="#">
+                <Link to="/specialists">{t("Header.10")}</Link>
+              </a>
+              <a className="linkaa" href="#">
+                <Link to="/diagnostics">{t("Header.11")}</Link>
+              </a>
+              <a className="linkaa" href="#">
+                <Link to="/fizo">{t("Header.9")}</Link>
+              </a>
+              </div>
+            </div>
+              
+            
+            
+          
         </li>
-        <li>
+        <li  className="rec_ali">
           <a href="#">
             <Link to="doctors">{t("Header.4")}</Link>
           </a>
         </li>
-        <li className="open2">
-          <a href="#" className="open3">
-            {t("Header.5")}
-            <i className="bx bxs-chevron-down"></i>
-          </a>
-          <div className="flexitem1">
-            <a href="#">{t("Header.10")}</a>
-            <a href="#">
-              <Link to="/diagnostics">{t("Header.11")}</Link>
-            </a>
-          </div>
+        <li  className="rec_ali">
+        <div class="dropdown">
+        <span className="pointer">{t("Header.5")} </span>
+        <i className="bx bxs-chevron-down"></i>
+              <div class="dropdown-content">
+              <a className="linkaa" href="#">
+                <Link to="/InfoClinic">{t("Header.12")}</Link>
+              </a>
+              <a className="linkaa" href="#">
+                <Link to="/Afzallik">{t("Header.13")}</Link>
+              </a>
+              <a className="linkaa" href="#">
+                <Link to="/Qulaylik">{t("Header.14")}</Link>
+              </a>
+              <a className="" href="#">
+                <Link to="/Sertifikat">{t("Header.15")}</Link>
+              </a>
+              </div>
+         </div>
+           
+               
+             
+          
         </li>
-        <li>
+        <li  className="rec_ali">
           <a href="#">
             <Link to="/news">{t("Header.6")} </Link>
           </a>
         </li>
-        <li>
+        <li  className="rec_ali">
           <div className="flex-item">
             <Link to="/hamkor">{t("Header.7")}</Link>
           </div>
         </li>
-        <li>
+        <li className="rec_ali" >
           <a href="#">{t("Header.8")} </a>
         </li>
       </ul>

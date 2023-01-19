@@ -7,6 +7,9 @@ import Diognostika from "../../pages/client/Diog";
 import Aksiya from "../../pages/client/Aksiya";
 import Manzil from "../../pages/client/Manzil";
 import ClinicaInfo from "../../pages/client/Klinika Haqida";
+import Afzallik from "../../pages/client/Afzalliklari";
+import Qulaylik from "../../pages/client/Qulaylik";
+import Sertifikat from "../../pages/client/Sertifikat";
 import Fizot from "../../pages/client/Fizo";
 import Fizot1 from "../../pages/client/Fizo1";
 import Fizot2 from "../../pages/client/Fizo2";
@@ -24,6 +27,7 @@ import Fizot13 from "../../pages/client/Fizo13";
 import Fizot14 from "../../pages/client/Fizo14";
 import Hamkor from "../../pages/client/hamkorlik";
 import News from "../../pages/news";
+import Qabul from "../../pages/client/Qabul";
 
 
 export const DataRouters = [
@@ -157,4 +161,25 @@ export const DataRouters = [
     path: "/hamkor",
     Element: <Hamkor />,
   },
+  {
+    id: 27,
+    path: "/Afzallik",
+    Element: <Afzallik/>,
+  },
+  {
+    id: 28,
+    path: "/Qulaylik",
+    Element: <Qulaylik/>,
+  },
+  {
+    id: 29,
+    path: "/Sertifikat",
+    Element: <Sertifikat/>,
+  },
+  {
+    id: 29,
+    path: "/Qabul",
+    Element: <Qabul/>,
+  },
+
 ];

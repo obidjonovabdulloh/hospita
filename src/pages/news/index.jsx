@@ -13,7 +13,6 @@ function News() {
     };
     return (
         <body className='bodyy'>
-            {/* <Slider/> */}
             <GalWrapper>
                 <Slider {...settings}>
                
@@ -22,7 +21,7 @@ function News() {
                        
                        < h3 className='alih3' data-aos="zoom-out-up">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
 
-                       <img className='imgali' src="https://picsum.photos/700" alt="" />
+                       <img className='aliimg' src="https://hayatmed.uz/uploads/articles/88/content-original-526x526.jpg" alt="" />
 
                      
                        </div>
@@ -34,7 +33,7 @@ function News() {
                        
                        < h3 className='alih3' data-aos="zoom-out-up">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
 
-                       <img className='aliimg' src="https://picsum.photos/700" alt="" />
+                       <img className='aliimg' src="https://picsum.photos/300" alt="" />
 
                      
                        </div>
@@ -46,7 +45,7 @@ function News() {
                        
                        < h3 className='alih3' data-aos="zoom-out-up">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
 
-                       <img className='aliimg' src="https://picsum.photos/700" alt="" />
+                       <img className='aliimg' src="https://picsum.photos/300" alt="" />
 
                      
                        </div>
