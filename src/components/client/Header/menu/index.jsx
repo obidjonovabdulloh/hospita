@@ -48,7 +48,7 @@ function MenuModal({setOpen, open }) {
                 </li>
                 <li>
                   
-                  <NavLink to={"/Qabul"}>
+                  <NavLink to={"/"}>
                   <p>
                       <Lottie animationData={writing} />
                     </p>
