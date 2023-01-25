@@ -31,7 +31,7 @@
   border: none;
   background-color: transparent;
   font-weight: 600;
-  letter-spacing: 1px;  
+  letter-spacing: 1px;
 }
 
 .sub-menu-item .btn2 {
@@ -42,9 +42,81 @@
   border: none;
   background-color: transparent;
   font-weight: 600;
+  letter-spacing: 1px;
+}
+.sub-menu-item .btn3{
+  position: absolute;
+  top: 60%;
+  left: 8%;
+  width: 80%;
+  border: none;
+  background-color: transparent;
+  font-weight: 600;
   letter-spacing: 1px;  
 }
-
+.sub-menu-item .btn4{
+  position: absolute;
+  top: 80%;
+  left: 8%;
+  width: 80%;
+  border: none;
+  background-color: transparent;
+  font-weight: 600;
+  letter-spacing: 1px;  
+}
 .sub-menu-item p {
-color: transparent;
+  color: transparent;
+}
+.flexitem {
+  display: none;
+}
+.lidrop:hover .flexitem {
+  display: block !important;
+}
+
+.flexitem1 {
+  position: absolute;
+  border: 1px solid #34e065;
+  padding: 1% 1%;
+  border-radius: 5px;
+  background-color: white;
+  z-index: 1000;
+  display: none;
+}
+.flexitem1 a {
+  margin: 5% 0%;
+}
+
+.open2:hover .flexitem1 {
+  display: block !important;
+}
+.open3{
+padding-bottom: 5%;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 99px;
+  border-radius: 6px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  border: 1px solid green;
+  margin-left: -10px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.linkaa{
+  padding: 2px;
+}
+.pointer{
+  cursor: pointer;
 }

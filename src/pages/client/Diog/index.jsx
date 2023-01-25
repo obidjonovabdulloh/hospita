@@ -5,15 +5,24 @@ function Diognostika() {
     <>
       <Wrapper>
         <Cards data-aos="zoom-out">
-          <Card >
-            <h2>MRT</h2>
-          </Card>
-          <Card>
-            <h2>Raqamli rengen</h2>
-          </Card>
-          <Card>
-            <h2>Uzi</h2>
-          </Card>
+          {/* <Card > */}
+          <div >
+
+            <a href="#" id="fli" className="btn-flip" data-back="loremm" data-front="Ingalatsiya"></a>
+          </div>
+          {/* </Card> */}
+          {/* <Card> */}
+          <div >
+
+            <a href="#" id="fli" className="btn-flip" data-back="loremm" data-front="Ingalatsiya"></a>
+          </div>
+          {/* </Card> */}
+          {/* <Card> */}
+          <div >
+
+            <a href="#" id="fli" className="btn-flip" data-back="loremm" data-front="Ingalatsiya"></a>
+          </div>
+          {/* </Card> */}
         </Cards>
       </Wrapper>
     </>

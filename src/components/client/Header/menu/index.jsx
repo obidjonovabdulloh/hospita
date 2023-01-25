@@ -11,7 +11,7 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import call from "../../../../assets/client/call.json";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 
 
@@ -31,28 +31,28 @@ function MenuModal({setOpen, open }) {
             <Nav>
               <ul>
                 <li>
-                  <a href="#">
+                  <NavLink to={"/aksiya"}>
                     <p>
                       <Lottie animationData={percentage} />
                     </p>
                     {t("Header.0")}
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
-                  <a href="#">
+                  <NavLink to={"/manzil"}>
                     <p>
                       <Lottie animationData={address} />
                     </p>
                     {t("Header.1")}
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
                   
-                  <a href="#">
+                  <NavLink to={"/"}>
                   <p>
                       <Lottie animationData={writing} />
                     </p>
-                    {t("Header.2")}</a>                                  
+                    {t("Header.2")}</NavLink>                                  
                   </li>
                 <li>
                   <a href="tel:+998972770303 ">
@@ -96,9 +96,11 @@ function MenuModal({setOpen, open }) {
                   </AccordionDetails>
                 </Accordion>
               </div>
+              <NavLink to={"/news"}>
               <p className="link" href="#">
                 {t("Header.6")}
               </p>
+              </NavLink>
               <div>
                 <Accordion className="acc">
                   <AccordionSummary
@@ -106,7 +108,7 @@ function MenuModal({setOpen, open }) {
                     aria-controls="panel1a-content"
                     id="panel1a-header"
                   >
-                    <Typography>{t("Header.7")} </Typography>
+                    <Typography><NavLink to={"/hamkor"}>{t("Header.7")}</NavLink> </Typography>
                   </AccordionSummary>
                   <AccordionDetails>
                     <a href="#">Links</a>

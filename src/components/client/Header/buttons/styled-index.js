@@ -43,11 +43,23 @@ export const Wrapper = styled.div`
           font-size: 10px;
         }
       }
+      .open{
+      padding-bottom: 5%;
+      }
+    }
+  }
+
+  .flexitem {
+    position: absolute;
+    border: 1px solid #34e065;
+    padding: 1% 1%;
+    border-radius: 5px;
+    background-color: white;
+    z-index: 1000;
+   a {
+      margin: 5% 0%;
     }
   }
 `;
 
-
-export const Buttonw = styled.button`
-
-`
+export const Buttonw = styled.button``;
