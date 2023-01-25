@@ -1,11 +1,7 @@
-<<<<<<< HEAD
 import './ali.css'
 // import Slider from "../../components/client/Home/Slider"
 import Slider from "react-slick";
 import { GalWrapper, SliderItem } from "../../components/client/Home/Slider/styled-index";
-=======
-
->>>>>>> db15a00bc078ba4c3a87c4b2009dbe2dab85a69c
 function News() {
   
     return (

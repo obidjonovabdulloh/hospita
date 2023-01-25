@@ -5,6 +5,7 @@ import { Wrapper } from "./styled-index";
 import { useTranslation } from "react-i18next";
 import { Link, useNavigate } from "react-router-dom";
 import { NavLink } from "react-router-dom";
+import './style.css'
 
 export default function Buttons() {
   const [isHover1, toggleHover1] = React.useState(false);
