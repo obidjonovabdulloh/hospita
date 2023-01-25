@@ -155,7 +155,7 @@ export const DataRouters = [
     id: 25,
     path: "/fizo14",
     Element: <Fizot14 />,
-  }
+  },
   {
     id: 26,
     path: "/Afzallik",
