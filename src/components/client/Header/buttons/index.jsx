@@ -63,7 +63,7 @@ export default function Buttons() {
               <a className="linkaa" href="#">
                 <Link to="/Qulaylik">{t("Header.14")}</Link>
               </a>
-              <a className="" href="#">
+              <a className="linkaa" href="#">
                 <Link to="/Sertifikat">{t("Header.15")}</Link>
               </a>
               </div>
